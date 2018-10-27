@@ -21,11 +21,11 @@ function customrenewalstartdate_setDateDefault(&$form) {
   );
   $result = civicrm_api('Membership', 'getsingle', $params);
   //34 is the status_id of the "Grace" Membership Status.
-  if($result['status_id'] == 34) {
-    $temp = DateTime::createFromFormat('Y-m-d', $result['end_date']);
-    $temp->modify('+1 day');
-    $defaults['renewal_date'] = $temp->format('m/d/Y');
-    $form->setDefaults($defaults);
-  }
+  // if($result['status_id'] == 34) {
+  $temp = DateTime::createFromFormat('Y-m-d', $result['end_date']);
+  $temp->modify('+1 day');
+  $defaults['renewal_date'] = $temp->format('m/d/Y');
+  $form->setDefaults($defaults);
+  // }
 }
 

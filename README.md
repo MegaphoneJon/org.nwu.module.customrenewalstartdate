@@ -6,6 +6,8 @@ If the membership is expired, the start date of the renewal will begin immediate
 
 This was originally created to support the behavior above if the membership status is "Grace", but it was hardcoded for a client.  It wouldn't be much work for this to work on anyone's Grace status, but that's disabled for now.
 
+I wrote this a long time ago, and I don't recommend it as a good example extension to learn from.  I'm posting it in response to a request from a Stack Exchange user to use as-is!
+
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
 ## Requirements
